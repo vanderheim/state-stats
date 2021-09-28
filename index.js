@@ -1,7 +1,9 @@
-const csv = require('csv-parser');
-const fs = require('fs');
+import csv from 'csv-parser';
+import fs from 'fs';
 
-var argv = require('minimist')(process.argv.slice(2));
+import { createRequire } from "module";
+const require = createRequire(import.meta.url);
+let argv = require('minimist')(process.argv.slice(2));
 
 const zipCodes = {};
 const states = {};
