@@ -2,6 +2,8 @@
 
 This is a simple program written in NodeJS that takes in some statistical information in the form of two CSV files and performs some basic calculations on it.
 
+This program makes use of NodeJS's stream API to handle large sized files in chunks, rather than loading the entire file into memory.
+
 ## Table of Contents
 - [Prerequisities](#prerequisities)
 - [Installing](#install)
